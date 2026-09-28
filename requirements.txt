@@ -1,0 +1,6 @@
+# Versions with which every output in README.md was reproduced (Python 3.12.3)
+numpy==1.26.4
+scipy==1.11.4
+sympy==1.12
+mpmath==1.2.1
+matplotlib==3.10.8
