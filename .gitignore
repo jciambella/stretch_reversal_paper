@@ -5,3 +5,6 @@ __pycache__/
 *.png
 table1_margins.tex
 table1_margins.csv
+
+# graphical abstract shown in README.md
+!assets/graphical_abstract.png

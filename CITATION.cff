@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "Code for 'Stable stretch reversal in the biaxial tension of isotropic hyperelastic membranes'"
+type: software
+authors:
+  - family-names: Ciambella
+    given-names: Jacopo
+    affiliation: "Department of Structural and Geotechnical Engineering, Sapienza University of Rome"
+    email: jacopo.ciambella@uniroma1.it
+version: "1.0"
+license: MIT
+repository-code: "https://github.com/jciambella/stretch_reversal_paper"
+keywords:
+  - stretch reversal
+  - biaxial tension
+  - hyperelastic membranes
+  - dead-load stability
+  - Treloar-Kearsley instability
+preferred-citation:
+  type: article
+  title: "Stable stretch reversal in the biaxial tension of isotropic hyperelastic membranes"
+  authors:
+    - family-names: Ciambella
+      given-names: Jacopo
+  journal: "Proceedings of the Royal Society A"
+  status: submitted
+  year: 2026
