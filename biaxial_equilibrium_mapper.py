@@ -622,13 +622,11 @@ def find_coincidences(W, window=(0.2, 25.0), n_grid=420, verbose=True):
                   "lambda_1-monotone accessible branch")
         n_phys = sum(1 for f in tr if 0.0 <= f[2] <= 1.0)
         print("\n  SUMMARY")
-        print(f"  physical (transverse) reversal coincident with criticality "
-              f"for 0<=alpha<=1 : {n_phys}")
-        if n_phys == 0:
-            print("  => for 0<=alpha<=1 the reversal and criticality loci do not "
-                  "meet on the accessible branch")
-            print("     (coincidence occurs only at alpha>1, or on the inaccessible "
-                  "dual locus): computational support for the conjecture.")
+        print(f"  transverse crossings with local 0<=alpha<=1 : {n_phys}")
+        print("  These are intersections of finite-difference zero contours and are")
+        print("  not certified: at extreme stretch the difference scheme can produce")
+        print("  crossings that are not common zeros.  The exact result for the")
+        print("  energies of the paper is given by exact_elimination.py.")
     return found
 
 
@@ -1142,8 +1140,9 @@ def main():
     ap.add_argument("--outdir", default=".")
     ap.add_argument("--coincidences", default=None, choices=list(MATERIALS),
                     metavar="MATERIAL",
-                    help="locate reversal/criticality coincidences for MATERIAL "
-                         "and classify each by local alpha and accessibility")
+                    help="exploratory: intersect the finite-difference zero contours "
+                         "of det H and of the reversal loci for MATERIAL (not "
+                         "certified; the exact result is exact_elimination.py)")
     ap.add_argument("--selftest", action="store_true")
     ap.add_argument("--conjecture-sweep", default=None, choices=list(MATERIALS),
                     metavar="MATERIAL",

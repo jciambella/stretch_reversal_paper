@@ -490,7 +490,7 @@ def emit_latex(rows, path):
     out = [r"\begin{tabular}{lcccccc}", r"\hline",
            r"material & $\alpha$ & $(\lambda_1,\lambda_2)$ at reversal &",
            r"$\dfrac{\Psi_{22}}{\Psi_{11}}-\alpha^2$ & $\min(t_1,t_2)/\mu_0$ &",
-           r"$\mathrm{SE}/\mu_0$ & $\min_\gamma\mathcal{I}/\mu_0^2$ \\",
+           r"$\mathrm{SE}/\mu_0$ & $\min_\zeta\mathcal{I}/\mu_0^2$ \\",
            r"\hline"]
     for r in rows:
         name = r"\quad (second reversal)" if r.n > 1 else r.label

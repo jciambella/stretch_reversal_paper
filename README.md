@@ -74,9 +74,11 @@ in which the figures were written, not their numbering in the paper.
   Newton projection) with proximity de-duplication of components, with the
   criticality (det **H** = 0), reversal (N₂ = 0) and dual (N₁ = 0) loci;
   produces Figs 3 and 4. Further options: `--selftest` (checks against the
-  closed-form single-invariant results), `--coincidences MATERIAL`,
-  `--conjecture-sweep MATERIAL`, `--load P` (coexisting equilibria at a given
-  load). See `--help`.
+  closed-form single-invariant results), `--load P` (coexisting equilibria at
+  a given load) and `--conjecture-sweep MATERIAL`. `--coincidences MATERIAL` is
+  exploratory: it intersects finite-difference zero contours and is not
+  certified; the exact result for the energies of the paper is
+  `exact_elimination.py`. See `--help`.
 - **`exact_elimination.py`** — exact separation of the reversal and criticality
   loci: resultant Res_y(g₁, g₂) in x = λ₁², y = λ₂², computed in exact rational
   arithmetic, and, at each positive real root, the common root y of g₁ and g₂
@@ -98,7 +100,7 @@ in which the figures were written, not their numbering in the paper.
 
 Every output listed above was regenerated from this folder with the versions
 in `requirements.txt`: the five figures are pixel-identical at 100 dpi to those
-in the paper, `table1_margins.tex` is byte-identical to Table 1, and both
+in the paper, `table1_margins.tex` reproduces Table 1 exactly, and both
 `--selftest` runs pass.
 
 ## Licence
