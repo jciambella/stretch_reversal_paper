@@ -9,9 +9,8 @@ plane curves
     g1 = Psi_11 Psi_22 - Psi_12^2          (criticality: det H = 0)
     g2 = Psi_12 Psi_1 - Psi_11 Psi_2       (reversal:  r = alpha = Psi_2/Psi_1)
 
-as in the coincidence system of Sect. 7 of the paper and the ESM.
-
-in x = lambda_1^2, y = lambda_2^2.  The claim of Sect. 7 is that their only
+in x = lambda_1^2, y = lambda_2^2, as in the coincidence system of Sect. 7 of
+the paper and the ESM.  The claim of Sect. 7 is that their only
 common zero in the open positive quadrant is the equibiaxial Kearsley state
 (Mooney--Rivlin) or none (Gent--Thomas).  The resultant Res_y is exact
 (rational arithmetic); the lifting of its real roots is done in 100-digit
