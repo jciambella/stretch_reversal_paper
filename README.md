@@ -89,8 +89,9 @@ in which the figures were written, not their numbering in the paper.
   bands, minimised along the branch from the reference state to each reversal;
   produces Table 1. `--selftest` checks the moduli against direct symbolic
   differentiation, the principal-plane strong-ellipticity test against a sweep
-  of wave normals over the whole unit sphere, and Haughton's criterion against
-  Ogden's secular equation at α = 1. It is deliberately independent of
+  of wave normals over the whole unit sphere, and the reversal locus against
+  reference values for Mooney–Rivlin at c₂/c₁ = 1000, α = 0.9. It is
+  deliberately independent of
   `biaxial_equilibrium_mapper.py`.
 
 ### Verification
