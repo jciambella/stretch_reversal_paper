@@ -55,8 +55,9 @@ pip install -r requirements.txt
 | Figs 1, 2, 5 | `python3 make_figures.py` | `fig1_reversal_paths.pdf`, `fig2a_universal_with_detH.pdf` (Fig. 2), `fig3_census_terminal.pdf` (Fig. 5) |
 | Fig. 3 | `python3 biaxial_equilibrium_mapper.py --material constant --alpha 0.70 --plot` | `map_constant_a0.70.pdf` |
 | Fig. 4 | `python3 biaxial_equilibrium_mapper.py --material mooney1000 --alpha 0.90 --plot` | `map_mooney1000_a0.90.pdf` |
-| Sect. 7.2, exact elimination for Mooney–Rivlin and Gent–Thomas | `python3 exact_elimination.py` | printed to screen |
+| Sect. 7(b), exact elimination for Mooney–Rivlin and Gent–Thomas | `python3 exact_elimination.py` | printed to screen |
 | Table 1 (Appendix A) | `python3 stability_margins.py --table` | `table1_margins.tex`, `table1_margins.csv` |
+| Checks of Sects 7(b) and 8 (ESM §S4 and Table S2) | `python3 round2_checks.py` | printed to screen |
 
 `./run_all.sh` runs everything in sequence.
 
@@ -95,13 +96,21 @@ in which the figures were written, not their numbering in the paper.
   reference values for Mooney–Rivlin at c₂/c₁ = 1000, α = 0.9. It is
   deliberately independent of
   `biaxial_equilibrium_mapper.py`.
+- **`round2_checks.py`** — the checks added in the second revision, with exact
+  symbolic derivatives and continuation in λ₁: the fold coefficient
+  Ψᵢⱼₖnᵢnⱼnₖ, n = (r, −1), and P″ = Ψᵢⱼₖnᵢnⱼnₖ/(r − α) at the limit points of
+  Figs 3 and 4; the Mooney–Rivlin fold threshold at α = 0.9, where the two
+  limit points coalesce and P″ vanishes; the first criticality on the W(I₂)
+  trajectories of Fig. 2(b); and the large-strain states of the energy
+  W = (I₁ − 3) + 2c(√I₂ − √3) against the asymptotics of Sect. 8.
 
 ### Verification
 
 Every output listed above was regenerated from this folder with the versions
 in `requirements.txt`: the five figures are pixel-identical at 100 dpi to those
 in the paper, `table1_margins.tex` reproduces Table 1 exactly, and both
-`--selftest` runs pass.
+`--selftest` runs pass. `round2_checks.py` reproduces every value of §S4 and
+Table S2 of the ESM.
 
 ## Licence
 

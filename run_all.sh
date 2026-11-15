@@ -8,3 +8,4 @@ python3 biaxial_equilibrium_mapper.py --material mooney1000 --alpha 0.90 --plot 
 python3 exact_elimination.py                                               # Sect. 7
 python3 stability_margins.py --selftest
 python3 stability_margins.py --table                                       # Table 1
+python3 round2_checks.py                                                   # Sects 7(b), 8; ESM S4
